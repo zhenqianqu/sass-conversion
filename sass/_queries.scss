@@ -1,0 +1,11 @@
+@mixin media-min-max($min-pixels, $max-pixels){
+    @media all and (min-width: $min-pixels) and (max-width: $max-pixels){
+        @content;
+    }
+}
+
+@mixin media-min($min-pixels){
+    @media all and (min-width: $min-pixels){
+        @content;
+    }
+}
